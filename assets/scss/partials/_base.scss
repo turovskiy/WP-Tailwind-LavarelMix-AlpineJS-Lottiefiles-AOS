@@ -1,0 +1,19 @@
+// Додайте будь-яку спеціальну базу CSS 
+
+
+// Фундамент
+// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
+// згладжуванняшрифтів  
+// antialiased
+// -webkit-font-smoothing: antialiased; 
+// -moz-osx-font-smoothing: grayscale;
+//
+// html {
+//   @apply antialiased;
+//   font-size: 15px;
+//   text-rendering: optimizeLegibility;
+
+//   @screen md {
+//     font-size: 18px;
+//   }
+// }
