@@ -3,7 +3,7 @@ name: Create ZIP File
 on:
   push:
     branches:
-      - master  # Зміна гілки на ту, яка вам потрібна
+      - main  # Зміна гілки на ту, яка вам потрібна
 
 jobs:
   build:
