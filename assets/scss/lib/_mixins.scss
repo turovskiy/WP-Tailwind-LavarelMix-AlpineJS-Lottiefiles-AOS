@@ -1,0 +1,24 @@
+// Додайте будь-які спеціальні мікс
+
+/**
+ * Видаліть верхню частину від першої дитини та нижньої частини від останньої дитини.
+ */
+// @mixin first_last_marginless() {
+//   > :first-child {
+//     margin-top: 0;
+//   }
+
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
+// }
+
+// @mixin first_last_marginless_hor() {
+//   > :first-child {
+//     margin-left: 0;
+//   }
+
+//   > :last-child {
+//     margin-right: 0;
+//   }
+// }

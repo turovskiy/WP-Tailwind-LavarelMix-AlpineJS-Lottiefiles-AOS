@@ -1,0 +1,31 @@
+name: Create ZIP File
+
+on:
+  push:
+    branches:
+      - master  # Зміна гілки на ту, яка вам потрібна
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Remove Old ZIP File
+      run: |
+        if [ -f wp-tailwind-lavarelmix.zip ]; then
+          rm wp-tailwind-lavarelmix.zip
+        fi
+
+    - name: Create ZIP Archive
+      run: |
+        zip -r wp-tailwind-lavarelmix.zip inc app assets build includes templates footer.php functions.php header.php index.php style.css README.md local.json package.json webpack.mix.js
+    
+    - name: Add ZIP File to Repository
+      run: |
+        git config --global user.email "alexturik@gmail.com"
+        git config --global user.name "turovskiy"
+        git add wp-tailwind-lavarelmix.zip
+        git commit -m "Add new ZIP file and remove old"
+        git push
